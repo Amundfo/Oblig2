@@ -1,4 +1,8 @@
 name: github-actions
 on: [push]
 jobs:
-- uses: ./.github/actions/Test
+steps:
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v2
+      # This step references the directory that contains the action.
+      - uses: ./.github/actions/Test
