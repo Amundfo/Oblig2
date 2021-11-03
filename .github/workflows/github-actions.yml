@@ -1,12 +1,17 @@
-name: github-actions
-on: push
+name: github-actions.yml
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-    build:
+ build:
 
-     runs-on: ubuntu-latest
-     steps: 
+    runs-on: ubuntu-latest
+
+    steps:
      - uses: actions/checkout@v2
      - name: My first step
-     - uses: actions/Test@latest
+       uses: actions/Test@latest
      - name: Test
