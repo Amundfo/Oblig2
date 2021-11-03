@@ -1,8 +1,10 @@
 name: github-actions
-on: [push]
+on: push
+
 jobs:
-steps:
-      # This step checks out a copy of your repository.
-      - uses: actions/checkout@v2
-      # This step references the directory that contains the action.
-      - uses: ./.github/actions/Test
+  my_first_job:
+     runs-on: ubuntu-latest
+     steps: 
+     - uses: actions/checkout@v1
+     - name: My first step
+       uses: ./.github/actions/Test
