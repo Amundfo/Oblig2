@@ -19,4 +19,4 @@ jobs:
       - name: Run tests with Maven
         run: mvn -B test --file pom.xml
       - name: running test
-        run: $ mvn test
+        run: Run mvn -B test --file MainTest.java
