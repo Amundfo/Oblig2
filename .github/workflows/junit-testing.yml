@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: testing
+      run:
 
-        uses:
-          actions/checkout@v2
-          ./.github/action/action.yml
+      using: 'node12'
+      main: 'MainTest.java'
       - name: Checkout the repository
         uses: actions/checkout@v2
       - name: Set up JDK 14
