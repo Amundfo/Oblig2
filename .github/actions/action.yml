@@ -1,6 +1,0 @@
-name: action
-description: runs the main tests for github
-runs:
-
-  using: 'node12'
-  main: 'MainTest.java'
